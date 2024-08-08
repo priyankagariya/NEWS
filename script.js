@@ -1,6 +1,6 @@
 const apiKey = '4e828867cd0046ae85441e1745500151';
 const newsContainer = document.getElementById('news-container');
-const customImagePath = 'images/img.jpg';  // Path to your custom image
+const customImagePath = 'images/img.jpg'; 
 
 async function fetchNews() {
     const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`);
@@ -15,7 +15,7 @@ function displayNews(articles) {
         const articleElement = document.createElement('div');
         articleElement.classList.add('article');
 
-        // Use the custom image for every article
+
         const imageTag = `<img src="${customImagePath}" alt="Custom Image">`;
 
         articleElement.innerHTML = `
