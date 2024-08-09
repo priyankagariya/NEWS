@@ -39,5 +39,5 @@ function displayNews(articles) {
         newsContainer.appendChild(articleElement);
     });
 }
-
+}
 fetchNews();
