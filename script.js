@@ -6,7 +6,8 @@ async function fetchNews() {
 
       try {
           
-   const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`);
+ const response = await fetch(`https://newsapi.org/v2/everything?q=apple&apiKey=${apiKey}`);
+
 
             if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
