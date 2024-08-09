@@ -6,7 +6,7 @@ async function fetchNews() {
 
       try {
           
- const response = await fetch(`https://newsapi.org/v2/everything?q=apple&apiKey=${apiKey}`);
+ const response = await fetch(`http://newsapi.org/v2/everything?q=apple&apiKey=${apiKey}`);
 
 
             if (!response.ok) {
